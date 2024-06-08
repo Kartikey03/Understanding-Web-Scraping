@@ -5,5 +5,5 @@ proxies = {
   'https': 'http://10.10.1.10:1080',
 }
 
-r = requests.get('https://api64.ipify.org?format=json')
-print(r.json())
+r = requests.get('https://api64.ipify.org')
+print(r.text)

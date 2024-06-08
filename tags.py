@@ -6,4 +6,8 @@ with open("sample.html", "r") as f:
 
 soup = BeautifulSoup(html_doc, 'html.parser')
 # print(soup.prettify())
-print(soup.title.string)
+# print(soup.title.string)
+# print(soup.find_all("div"))
+
+for links in soup.find_all("a"):
+    print(links.get("href"))
